@@ -1,57 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results retried="2" ignored="0" total="5" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-09T21:17:35 IST" name="Default suite" finished-at="2025-11-09T21:17:44 IST" duration-ms="8501">
+  <suite started-at="2025-11-12T09:40:18 IST" name="Suite" finished-at="2025-11-12T09:40:20 IST" duration-ms="1634">
     <groups>
     </groups>
-    <test started-at="2025-11-09T21:17:35 IST" name="Default test" finished-at="2025-11-09T21:17:44 IST" duration-ms="8501">
-      <class name="test.TC_radio">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC_radio@7586beff]" started-at="2025-11-09T21:17:36 IST" name="setUp" finished-at="2025-11-09T21:17:40 IST" duration-ms="3931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="radioMeth(java.lang.reflect.Method)[pri:0, instance:test.TC_radio@7586beff]" started-at="2025-11-09T21:17:40 IST" name="radioMeth" finished-at="2025-11-09T21:17:40 IST" duration-ms="323" status="PASS">
+    <test started-at="2025-11-12T09:40:18 IST" name="test from package" finished-at="2025-11-12T09:40:19 IST" duration-ms="1114">
+      <class name="test.TC_sampleTest">
+        <test-method signature="radioMeth1(java.lang.reflect.Method)[pri:0, instance:test.TC_sampleTest@7eac9008]" started-at="2025-11-12T09:40:19 IST" name="radioMeth1" finished-at="2025-11-12T09:40:19 IST" duration-ms="201" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test.TC_radio.radioMeth(java.lang.reflect.Method)]]>
+                <![CDATA[public void test.TC_sampleTest.radioMeth1(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- radioMeth -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TC_radio@7586beff]" started-at="2025-11-09T21:17:40 IST" name="tearDown" finished-at="2025-11-09T21:17:40 IST" duration-ms="306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC_radio@7586beff]" started-at="2025-11-09T21:17:40 IST" name="setUp" finished-at="2025-11-09T21:17:43 IST" duration-ms="2801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="radioMeth1(java.lang.reflect.Method)[pri:0, instance:test.TC_radio@7586beff]" started-at="2025-11-09T21:17:43 IST" name="radioMeth1" finished-at="2025-11-09T21:17:43 IST" duration-ms="299" status="FAIL">
+        </test-method> <!-- radioMeth1 -->
+        <test-method retried="true" signature="radioMeth2(java.lang.reflect.Method)[pri:0, instance:test.TC_sampleTest@7eac9008]" started-at="2025-11-12T09:40:19 IST" name="radioMeth2" finished-at="2025-11-12T09:40:19 IST" duration-ms="83" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test.TC_radio.radioMeth1(java.lang.reflect.Method)]]>
+                <![CDATA[public void test.TC_sampleTest.radioMeth2(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1079)
-at org.testng.Assert.assertEquals(Assert.java:1043)
-at org.testng.Assert.assertEquals(Assert.java:1089)
-at test.TC_radio.radioMeth1(TC_radio.java:34)
+at org.testng.Assert.fail(Assert.java:116)
+at test.TC_sampleTest.radioMeth2(TC_sampleTest.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -83,12 +66,148 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- radioMeth1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TC_radio@7586beff]" started-at="2025-11-09T21:17:44 IST" name="tearDown" finished-at="2025-11-09T21:17:44 IST" duration-ms="305" status="PASS">
+        </test-method> <!-- radioMeth2 -->
+        <test-method retried="true" signature="radioMeth2(java.lang.reflect.Method)[pri:0, instance:test.TC_sampleTest@7eac9008]" started-at="2025-11-12T09:40:19 IST" name="radioMeth2" finished-at="2025-11-12T09:40:19 IST" duration-ms="74" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.TC_sampleTest.radioMeth2(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at test.TC_sampleTest.radioMeth2(TC_sampleTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.TC_radio -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- radioMeth2 -->
+        <test-method signature="radioMeth2(java.lang.reflect.Method)[pri:0, instance:test.TC_sampleTest@7eac9008]" started-at="2025-11-12T09:40:19 IST" name="radioMeth2" finished-at="2025-11-12T09:40:19 IST" duration-ms="65" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.TC_sampleTest.radioMeth2(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at test.TC_sampleTest.radioMeth2(TC_sampleTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioMeth2 -->
+        <test-method signature="radioMeth3()[pri:0, instance:test.TC_sampleTest@7eac9008]" started-at="2025-11-12T09:40:19 IST" name="radioMeth3" finished-at="2025-11-12T09:40:19 IST" duration-ms="49" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this test due to business logic.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this test due to business logic.
+at test.TC_sampleTest.radioMeth3(TC_sampleTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioMeth3 -->
+      </class> <!-- test.TC_sampleTest -->
+    </test> <!-- test from package -->
+    <test started-at="2025-11-12T09:40:20 IST" name="all" finished-at="2025-11-12T09:40:20 IST" duration-ms="0">
+    </test> <!-- all -->
+  </suite> <!-- Suite -->
 </testng-results>

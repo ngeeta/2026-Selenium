@@ -7,13 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import base.BaseClass;
 
-public class raRadio{
+public class SampleTest{
    
   //Identify Element
   	@FindBy(xpath = "//*[@value='radio1']")
   	WebElement radio1;
   	//Identify Action
-    public raRadio(WebDriver driver) {
+    public SampleTest(WebDriver driver) {
 		System.out.println("raRadio constructor start");
 
         PageFactory.initElements(driver, this);
