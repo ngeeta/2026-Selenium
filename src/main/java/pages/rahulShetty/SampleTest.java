@@ -13,7 +13,9 @@ public class SampleTest{
   	@FindBy(xpath = "//*[@value='radio1']")
   	WebElement radio1;
   	//Identify Action
-    public SampleTest(WebDriver driver) {
+    public SampleTest(WebDriver driver) throws InterruptedException {
+    	Thread.sleep(2000);
+
 		System.out.println("raRadio constructor start");
 
         PageFactory.initElements(driver, this);
@@ -21,7 +23,8 @@ public class SampleTest{
 
     }
 
-    public void clickRadio1() {
+    public void clickRadio1() throws InterruptedException {
+    	Thread.sleep(2000);
 		System.out.println("clickRadio1 start");
 
     	radio1.click();

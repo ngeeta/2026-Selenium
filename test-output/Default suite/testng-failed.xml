@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TC_radio">
+      <class name="JavaPrograms.AddNoFromString">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="radioMeth2" invocation-numbers="0"/>
+          <include name="addWithouUsingIsDigit"/>
         </methods>
-      </class> <!-- test.TC_radio -->
+      </class> <!-- JavaPrograms.AddNoFromString -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

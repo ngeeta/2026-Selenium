@@ -24,36 +24,5 @@ public class BaseClass {
 	public static ExtentSparkReporter  extentSparkReporter;
 	public static ExtentReports extentReports;
 	public static ExtentTest extentTest;
-	//- Its constructor or static blocks run as soon as the object is created  before 
-/*	ConfigReader readConfig = new ConfigReader();
-	String browser;
 	
-
-   @BeforeMethod
-   public void setUp() {
-	   System.out.println("----BeforeStep setUp start----");
-	 //  System.out.println("----raUrl----"+raUrl);
-
-       browser = readConfig.get("browser");
-       if (browser.equalsIgnoreCase("chrome")) {
-           driver = new ChromeDriver();
-       }
-       else if (browser.equalsIgnoreCase("edge")) {
-           driver = new EdgeDriver();
-	}
-       else if (browser.equalsIgnoreCase("firefox")) {
-           driver = new FirefoxDriver();
-	}
-       
-       driver.manage().window().maximize();
-      driver.get(readConfig.get("raUrl"));
-	   System.out.println("----BeforeStep setUp end----");
-
-   }
-
-   @AfterMethod
-   public void tearDown() {
-       driver.quit();
-   }*/
-
 }

@@ -38,6 +38,7 @@ public class PITestListener extends BaseClass implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("---- ITestListener -onTestStart ----");
+		extentTest=extentReports.createTest(result.getName());
 
 	}
 

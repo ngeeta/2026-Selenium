@@ -12,15 +12,15 @@ import utils.*;
 import base.BaseClass;
 import pages.rahulShetty.SampleTest;
 
-//@Listeners(PListeners.class)
+@Listeners({PISuiteListener.class,PITestListener.class})
 public class TC_sampleTest extends BaseClass {
 	SampleTest rd;
 
 SoftAssert soft=new SoftAssert();
 	@Test
-	public void radioMeth1(Method name) {
+	public void radioMeth1(Method name) throws InterruptedException {
 		rd = new SampleTest(driver);
-		extentTest = extentReports.createTest(name.getName());
+		//extentTest = extentReports.createTest(name.getName());
 		rd.clickRadio1();
 		Assert.assertEquals(false, false);
 		// Thread.sleep(2000);
@@ -29,10 +29,10 @@ SoftAssert soft=new SoftAssert();
 	}
 
 	@Test
-	public void radioMeth2(Method name) {
+	public void radioMeth2(Method name) throws InterruptedException {
 		rd = new SampleTest(driver);
 
-		extentTest = extentReports.createTest("Fail wala test");
+		//extentTest = extentReports.createTest("Fail wala test");
 		rd.clickRadio1();
 
 		
@@ -40,10 +40,10 @@ Assert.fail();
 
 	}
 	@Test
-    public void radioMeth3() {
+    public void radioMeth3() throws InterruptedException {
 		rd = new SampleTest(driver);
 
-		extentTest = extentReports.createTest("Skipwala test");
+	//	extentTest = extentReports.createTest("Skipwala test");
 		rd.clickRadio1();
 
 		System.out.println("skip");

@@ -30,5 +30,28 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
-</dependency></dependencies>
+</dependency>
+
+  <!-- Cucumber Core -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.14.0</version>
+  </dependency>
+
+  <!-- Cucumber TestNG Integration -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.14.0</version>
+  </dependency>
+
+  <!-- Cucumber Gherkin Parser -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>26.0.0</version>
+  </dependency>
+
+</dependencies>
 </project>
